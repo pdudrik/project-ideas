@@ -5,6 +5,9 @@ This repository contains my personal ideas for potentially upcoming projects.
 # List
 
 - [Synchronise EduPage with Google Calendar](#synchronise-edupage-with-google-calendar)
+- [Smart House Solution](#smart-house-solution)
+
+# Project Ideas Description
 
 ## Synchronise EduPage with Google Calendar
 
@@ -39,3 +42,31 @@ Script which will be checking for a new tasks and assignmets, will be executed i
 
 - Python v3 - Google API, EduPage API
 - server storage (e.g. Raspberry Pi)
+
+## Smart House Solution
+
+Create centralized system for smart houses (objects). System will be capable of maintaing and managing a household to a certain level. Whole object will be able to divide into specific areas (let's say rooms). Each room will have some devices. The number and the type of devices will depend only on the user. How many and which devices will they put into their household is only up to them. After device launch, the device will connect to the server. Then it will be up to user to decide in which room the device will be stored in system (not physical position, but logical position in system).
+
+The system will be divided into 3 parts:
+
+- Server
+- Web
+- ESP nodes
+
+### Server
+
+Server side of project will be responsible for all communication among modules and other parts of system. It will be considered as core (heart) of the system. Backend of the system includes database, REST API, logs and other communication modules.
+
+### Web
+
+Web side of project will be that what user sees. The web application will have the options to control and monitor the whole system, specifically the devices within (ESP nodes in general). User will be able to see current values of specific evniromental properties (temperature, humidity, etc). There will be an option to control devices as appliances, lamps, etc.
+
+### ESP nodes
+
+Physical part of the project. Each *ESP node* is considered as a one device (e.g. thermometer, 2-channel relay controller, etc.). Part *ESP nodes* was named by using the majority of ESP controllers (ESP32, etc.) as the main MCU of device. Each device will be build by the main MCU and all necessry components such as sensors, relay modules, etc.
+
+### Communication
+
+Communication with *Web* will be through HTTP/HTTPS protocol.
+
+Communication with *ESP nodes* will be through MQTT protocol.
