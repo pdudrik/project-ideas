@@ -45,7 +45,7 @@ Script which will be checking for a new tasks and assignmets, will be executed i
 
 ## Smart House Solution
 
-Create centralized system for smart houses (objects). System will be capable of maintaing and managing a household to a certain level. Whole object will be able to divide into specific areas (let's say rooms). Each room will have some devices. The number and the type of devices will depend only on the user. How many and which devices will they put into their household is only up to them. After device launch, the device will connect to the server. Then it will be up to user to decide in which room the device will be stored in system (not physical position, but logical position in system).
+Create centralized system for smart houses (objects). System will be capable of maintaing and managing a household to a certain level. Whole object will be able to divide into specific areas (let's say rooms). Each room will have some devices. The number and the type of devices will depend only on the user. How many and which devices will they put into their household is only up to them. After device launch, the device will connect to the server. Then it will be up to user to decide in which room the device will be stored in system (not physical position, but logical position in system). Web server Nginx will be used as reverse proxy and will be used as gate between server and other modules - Web, ESP nodes.
 
 The system will be divided into 3 parts:
 
@@ -70,3 +70,25 @@ Physical part of the project. Each *ESP node* is considered as a one device (e.g
 Communication with *Web* will be through HTTP/HTTPS protocol.
 
 Communication with *ESP nodes* will be through MQTT protocol.
+
+### Technologies to use
+
+Server:
+
+- server - Raspberry Pi 4
+- web server - Nginx
+- REST API - Python3 Flask
+- databse - sqlite3/PostreSQL (Python3 SQLAlchemy)
+- communication - HTTP requests, paho MQTT
+- logs - Python3 logger
+
+Web:
+
+- HTML5
+- CSS3 - Bootstrap/Tailwind
+- JavaScript - Jquery, AJAX
+
+ESP nodes:
+
+- Arduino.h
+- MQTT - PubSubClient
