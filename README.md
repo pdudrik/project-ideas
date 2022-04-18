@@ -5,6 +5,11 @@ This repository contains my personal ideas for potentially upcoming projects.
 # List
 
 - [Synchronise EduPage with Google Calendar](#synchronise-edupage-with-google-calendar)
+- [Feature ideas for Smart House Solution](#feature-ideas-for-smart-house-solution)
+  - [Command groups](#command-groups)
+  - [Room radio](#room-radio)
+  - [Variable light control](#variable-light-control)
+  - [Thermostat controller](#thermostat-controller)
 - [Smart House Solution](#smart-house-solution)
 
 # Project Ideas Description
@@ -92,3 +97,42 @@ ESP nodes:
 
 - Arduino.h
 - MQTT - PubSubClient
+
+## Feature ideas for Smart House Solution
+
+This item consists of potentionaly upcomming features for project Smart House Solution. It has its own section because of complexity of project and for easier readability.
+
+### Command groups
+
+User will have an option to group up specific commands together. Those commands will be executed in order. The group will be user-defined.
+
+e.g. *morning routine* :
+
+1. trigger the alarm in specific time (user-defined as well)
+2. pull up blinds
+3. read the weather forecast
+4. play some pleasent morning music or radio
+
+### Room radio
+
+Create new ESP nodes device which will operate as internet radio and music player. User will be able to control radio device from web application.
+
+Device functions:
+
+- play/pause/stop
+- rewind/fast forward/set specific time
+
+Device will be capable of playing:
+
+- different radio stations
+- own music - Spotify, Youtube or local storage
+
+### Variable light control
+
+Create ESP nodes device which will be capable of controlling the level of lights from the web application. Variable controller in range e.g. 0-100%.
+
+### Thermostat controller
+
+Link SHS system with thermostat system (Honeywell Home) by using their public API for developers. In the result of this, the system will have an access to manage and maitain the thermostats within the object through Web application.
+
+By this, the system will be exposed to 3rd party enviroment.
