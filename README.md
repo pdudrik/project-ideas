@@ -6,6 +6,9 @@ This repository contains my personal ideas for potentially upcoming projects.
 
 - [Synchronise EduPage with Google Calendar](#synchronise-edupage-with-google-calendar)
 - [Feature ideas for Smart House Solution](#feature-ideas-for-smart-house-solution)
+  - [Actual data in web application](#actual-data-in-web-application)
+  - [Interactive web](#interactive-web)
+  - [Blinds controller](#blinds-controller)
   - [Command groups](#command-groups)
   - [Room radio](#room-radio)
   - [Variable light control](#variable-light-control)
