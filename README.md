@@ -102,6 +102,22 @@ ESP nodes:
 
 This item consists of potentionaly upcomming features for project Smart House Solution. It has its own section because of complexity of project and for easier readability.
 
+### Actual data in web application
+
+Apply web sockets to web and server, and acquire current and actual values measured from sensors (no need to refresh site to get an update).
+
+### Interactive web
+
+Add some interactive features to improve UX:
+
+- order device units within the room by name (asc/desc), activity (active first), etc.
+- create an option to move device from one room to another - logically in system, not physically
+- add signal indicator for each device unit to track current connectivity status - track if device is connected to system or not (online/offline)
+
+### Blinds controller
+
+Create new ESP nodes device which will be controlling window blinds - pull up or pull down.
+
 ### Command groups
 
 User will have an option to group up specific commands together. Those commands will be executed in order. The group will be user-defined.
